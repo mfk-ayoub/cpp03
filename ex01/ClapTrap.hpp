@@ -6,19 +6,20 @@
 /*   By: ayel-mou <ayel-mou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/30 10:26:31 by ayel-mou          #+#    #+#             */
-/*   Updated: 2025/04/03 18:22:30 by ayel-mou         ###   ########.fr       */
+/*   Updated: 2025/04/03 18:21:49 by ayel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef __ClapTrap_HPP__
 #define __ClapTrap_HPP__
 
+
 #include <string>
 #include <iostream>
 
 class ClapTrap
 {
-	private:
+	protected:
 		std::string name;
 		unsigned int health;	
 		unsigned int energy;
