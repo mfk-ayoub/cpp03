@@ -1,35 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ayel-mou <ayel-mou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/03 15:17:22 by ayel-mou          #+#    #+#             */
-/*   Updated: 2025/04/04 16:04:13 by ayel-mou         ###   ########.fr       */
+/*   Created: 2025/04/02 20:33:46 by ayel-mou          #+#    #+#             */
+/*   Updated: 2025/04/04 15:23:18 by ayel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-#ifndef _SCAVTRAP_HPP_
-#define _SCAVTRAP_HPP_
-
 #include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 
-class ScavTrap  : public ClapTrap 
+
+int main()
 {
-	private:
-	public:
-		ScavTrap();
-		ScavTrap(const std::string& name);
-		ScavTrap(const ScavTrap &copy);
-		ScavTrap	&operator=(ScavTrap const &other);
-		~ScavTrap();
-		void guardGate();
-};
+    ClapTrap clap("tung tung sahur");
+    ScavTrap scav("shimpanzini bananinni");
+    clap.attack("trulimero trulicina");
+    scav.attack("Cappuccino assasino");
+    scav.guardGate();
+    scav.takeDamage(30);
+    scav.beRepaired(20);
 
+    return (0);
+}
 
-
-
-
-#endif

@@ -6,7 +6,7 @@
 /*   By: ayel-mou <ayel-mou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/30 10:30:24 by ayel-mou          #+#    #+#             */
-/*   Updated: 2025/04/04 16:07:16 by ayel-mou         ###   ########.fr       */
+/*   Updated: 2025/04/04 16:06:12 by ayel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,12 +82,12 @@ ClapTrap::ClapTrap()
 ClapTrap::ClapTrap(const std::string& name)
     : name(name), health(10), energy(10), damage(0)
 {
-    std::cout   << "ClapTrap " << name << " Constructor called" <<std::endl;
+    std::cout   << "ClapTrap " <<  name << " Constructor called" <<std::endl;
 }
 
 ClapTrap::~ClapTrap()
 {
-    std::cout << "ClapTrap " << name  <<  " Destructor called " <<  std::endl;
+    std::cout << "ClapTrap  " << name  << " Destructor called " <<  std::endl;
 }
 
 ClapTrap& ClapTrap::operator=(const ClapTrap &other)
