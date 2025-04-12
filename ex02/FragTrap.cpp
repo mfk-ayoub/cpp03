@@ -6,7 +6,7 @@
 /*   By: ayel-mou <ayel-mou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/04 15:53:16 by ayel-mou          #+#    #+#             */
-/*   Updated: 2025/04/04 16:14:00 by ayel-mou         ###   ########.fr       */
+/*   Updated: 2025/04/12 14:33:03 by ayel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ FragTrap::FragTrap()
 
 FragTrap::~FragTrap()
 {
-	std::cout << " FragTrap  " << name <<  " Destructor called" << std::endl;
+	std::cout << "FragTrap  " << name <<  " Destructor called" << std::endl;
 }
 
 FragTrap::FragTrap(const std::string& name)
@@ -58,6 +58,8 @@ FragTrap&  FragTrap::operator=(FragTrap const &other)
 	}
 	return (*this);
 }
+
+
 
 FragTrap::FragTrap(const FragTrap &copy)
 {

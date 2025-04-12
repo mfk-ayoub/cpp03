@@ -6,7 +6,7 @@
 /*   By: ayel-mou <ayel-mou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 15:47:09 by ayel-mou          #+#    #+#             */
-/*   Updated: 2025/04/04 18:17:23 by ayel-mou         ###   ########.fr       */
+/*   Updated: 2025/04/04 18:36:59 by ayel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,8 +53,23 @@ ScavTrap::ScavTrap(const ScavTrap &copy)
 }
 
 void ScavTrap::attack(const std::string& target)
-{
-	std::cout << "attack hhhhhhhhhhhhhhhhhhhh" << target << std::endl;
+{	
+    if (health == 0)
+    {
+        std::cout << "ScavTrap " << name << " cannot attack! No hit points left!" << std::endl;
+        return ;
+    }
+    else if (energy == 0)
+    {
+        std::cout << "ScavTrap " << name << " has no energy to attack!" << std::endl;
+        return ;
+    }
+    else
+    {
+        std::cout << "ScavTrap " << target <<  " attacks "  << name 
+                  << ", causing " << damage << " points of damage!" << std::endl;
+        energy--; 
+    }
 }
 
 ScavTrap&  ScavTrap::operator=(ScavTrap const &other)

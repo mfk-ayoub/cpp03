@@ -6,7 +6,19 @@
 /*   By: ayel-mou <ayel-mou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 15:47:09 by ayel-mou          #+#    #+#             */
-/*   Updated: 2025/04/04 16:14:12 by ayel-mou         ###   ########.fr       */
+/*   Updated: 2025/04/04 18:37:25 by ayel-mou         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ScavTrap.cpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ayel-mou <ayel-mou@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/03 15:47:09 by ayel-mou          #+#    #+#             */
+/*   Updated: 2025/04/04 18:36:59 by ayel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +34,6 @@ ScavTrap::ScavTrap()
 
 ScavTrap::ScavTrap(const std::string& name)
 	: ClapTrap(name)
-
 {
 	std::cout << "ScavTrap " << name << " constructed" << std::endl;
 	health = 100;
@@ -53,6 +64,25 @@ ScavTrap::ScavTrap(const ScavTrap &copy)
 	*this = copy;
 }
 
+void ScavTrap::attack(const std::string& target)
+{	
+    if (health == 0)
+    {
+        std::cout << "ScavTrap " << name << " cannot attack! No hit points left!" << std::endl;
+        return ;
+    }
+    else if (energy == 0)
+    {
+        std::cout << "ScavTrap " << name << " has no energy to attack!" << std::endl;
+        return ;
+    }
+    else
+    {
+        std::cout << "ScavTrap " << target <<  " attacks "  << name 
+                  << ", causing " << damage << " points of damage!" << std::endl;
+        energy--; 
+    }
+}
 
 ScavTrap&  ScavTrap::operator=(ScavTrap const &other)
 {
