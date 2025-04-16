@@ -6,7 +6,7 @@
 /*   By: ayel-mou <ayel-mou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 15:47:09 by ayel-mou          #+#    #+#             */
-/*   Updated: 2025/04/04 16:14:12 by ayel-mou         ###   ########.fr       */
+/*   Updated: 2025/04/16 16:52:32 by ayel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,10 +41,10 @@ void ScavTrap::guardGate()
 { 
 	if (health < 1)
 	{
-		std::cout <<  "ScavTrap "  << name << " cannot guard the gate. He is dead." << std::endl;
+		std::cout <<  "ScavTrap "  << _name << " cannot guard the gate. He is dead." << std::endl;
 		return ;
 	}
-	std::cout << "ScavTrap " << name << " is now in Gate keeper mode." << std::endl;
+	std::cout << "ScavTrap " << _name << " is now in Gate keeper mode." << std::endl;
 }
 
 ScavTrap::ScavTrap(const ScavTrap &copy)
@@ -59,7 +59,7 @@ ScavTrap&  ScavTrap::operator=(ScavTrap const &other)
 	std::cout << "Assignment operator for ScavTrap called" << std::endl;
 	if (this != &other)
 	{
-		name = other.name;
+		_name = other._name;
 		health = other.health;
 		energy = other.energy;
 		damage = other.damage;

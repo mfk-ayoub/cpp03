@@ -6,7 +6,7 @@
 /*   By: ayel-mou <ayel-mou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/30 10:26:31 by ayel-mou          #+#    #+#             */
-/*   Updated: 2025/04/03 18:21:49 by ayel-mou         ###   ########.fr       */
+/*   Updated: 2025/04/16 16:50:36 by ayel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 class ClapTrap
 {
 	protected:
-		std::string name;
+		std::string _name;
 		unsigned int health;	
 		unsigned int energy;
 		unsigned int damage;

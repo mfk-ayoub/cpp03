@@ -6,7 +6,7 @@
 /*   By: ayel-mou <ayel-mou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/04 16:51:42 by ayel-mou          #+#    #+#             */
-/*   Updated: 2025/04/04 16:59:29 by ayel-mou         ###   ########.fr       */
+/*   Updated: 2025/04/16 17:35:16 by ayel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class DiamondTrap : public ScavTrap , public FragTrap
 	public:
 		DiamondTrap();
 		~DiamondTrap();
-		void whoAmI();
+		void whoAmI() const;
 };
 
 DiamondTrap::DiamondTrap()
@@ -35,5 +35,9 @@ DiamondTrap::~DiamondTrap()
 {
 }
 
+void DiamondTrap::whoAmI() const
+{
+        std::cout << "DiamondTrap name: " << name << ", ClapTrap name: " << ClapTrap::_name << std::endl;
+}
 
 #endif

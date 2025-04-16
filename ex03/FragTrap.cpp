@@ -6,7 +6,7 @@
 /*   By: ayel-mou <ayel-mou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/04 15:53:16 by ayel-mou          #+#    #+#             */
-/*   Updated: 2025/04/04 16:14:00 by ayel-mou         ###   ########.fr       */
+/*   Updated: 2025/04/16 16:52:12 by ayel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,13 @@ FragTrap::FragTrap()
 
 FragTrap::~FragTrap()
 {
-	std::cout << " FragTrap  " << name <<  " Destructor called" << std::endl;
+	std::cout << " FragTrap  " << _name <<  " Destructor called" << std::endl;
 }
 
 FragTrap::FragTrap(const std::string& name)
 	: ClapTrap(name)
 {
-	std::cout << "FragTrap " << name << " constructed" << std::endl;
+	std::cout << "FragTrap " << _name << " constructed" << std::endl;
 	health = 100;
 	energy = 30;
 	damage = 30;
@@ -39,10 +39,10 @@ void FragTrap::highFivesGuys(void)
 {
 	if (health <  1)
 	{
-		std::cout << "Cannot high five because: FragTrap " << name << " is dead." << std::endl;
+		std::cout << "Cannot high five because: FragTrap " << _name << " is dead." << std::endl;
 		return ;
 	}
-	std::cout << "FragTrap "  << name << " says: Give me a high five!"  << std::endl;	
+	std::cout << "FragTrap "  << _name << " says: Give me a high five!"  << std::endl;	
 }
 
 
@@ -51,7 +51,7 @@ FragTrap&  FragTrap::operator=(FragTrap const &other)
 	std::cout << "Assignment operator for FragTrap called" << std::endl;
 	if (this != &other)
 	{
-		name = other.name;
+		_name = other._name;
 		health = other.health;
 		energy = other.energy;
 		damage = other.damage;
