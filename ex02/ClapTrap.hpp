@@ -6,7 +6,7 @@
 /*   By: ayel-mou <ayel-mou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/30 10:26:31 by ayel-mou          #+#    #+#             */
-/*   Updated: 2025/04/04 18:37:55 by ayel-mou         ###   ########.fr       */
+/*   Updated: 2025/04/17 16:35:40 by ayel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ class ClapTrap
 		ClapTrap(const ClapTrap &copy);
 		ClapTrap& operator=(const ClapTrap &other);
 		~ClapTrap();
-		virtual void attack(const std::string& target);
+		void attack(const std::string& target);
 		void takeDamage(unsigned int amount);
 		void beRepaired(unsigned int amount);
 };

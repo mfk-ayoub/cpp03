@@ -6,7 +6,7 @@
 /*   By: ayel-mou <ayel-mou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/04 16:51:42 by ayel-mou          #+#    #+#             */
-/*   Updated: 2025/04/16 17:35:16 by ayel-mou         ###   ########.fr       */
+/*   Updated: 2025/04/17 16:50:59 by ayel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,27 +17,21 @@
 #include "ScavTrap.hpp"
 #include "FragTrap.hpp"
 
-class DiamondTrap : public ScavTrap , public FragTrap
+class DiamondTrap :  public ScavTrap , public FragTrap
 {
 	private:
 		std::string name;
 	public:
 		DiamondTrap();
-		~DiamondTrap();
+		DiamondTrap(const std::string& name); 
+		DiamondTrap(const DiamondTrap &copy);
+		DiamondTrap&  operator=(DiamondTrap const &other);
+		void attack(const std::string& target);
 		void whoAmI() const;
+		~DiamondTrap();
 };
 
-DiamondTrap::DiamondTrap()
-{
-}
 
-DiamondTrap::~DiamondTrap()
-{
-}
 
-void DiamondTrap::whoAmI() const
-{
-        std::cout << "DiamondTrap name: " << name << ", ClapTrap name: " << ClapTrap::_name << std::endl;
-}
 
 #endif

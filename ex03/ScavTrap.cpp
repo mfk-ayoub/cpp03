@@ -6,7 +6,7 @@
 /*   By: ayel-mou <ayel-mou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 15:47:09 by ayel-mou          #+#    #+#             */
-/*   Updated: 2025/04/16 16:52:32 by ayel-mou         ###   ########.fr       */
+/*   Updated: 2025/04/17 16:29:55 by ayel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ ScavTrap::ScavTrap()
 
 ScavTrap::ScavTrap(const std::string& name)
 	: ClapTrap(name)
-
 {
 	std::cout << "ScavTrap " << name << " constructed" << std::endl;
 	health = 100;
@@ -48,9 +47,13 @@ void ScavTrap::guardGate()
 }
 
 ScavTrap::ScavTrap(const ScavTrap &copy)
+	:ClapTrap(copy)
 {
 	std::cout << "ScavTrap Copy Constructor called" << std::endl;
-	*this = copy;
+	_name = copy._name;
+	health = copy.health;
+	energy = copy.energy;
+	damage = copy.damage;
 }
 
 
