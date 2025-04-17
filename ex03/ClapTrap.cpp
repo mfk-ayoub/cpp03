@@ -6,7 +6,7 @@
 /*   By: ayel-mou <ayel-mou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/30 10:30:24 by ayel-mou          #+#    #+#             */
-/*   Updated: 2025/04/17 16:05:21 by ayel-mou         ###   ########.fr       */
+/*   Updated: 2025/04/17 17:27:27 by ayel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,7 @@ ClapTrap::ClapTrap(const ClapTrap &copy)
 
 
 ClapTrap::ClapTrap() 
-    : _name("defaut name"),health(10), energy(10), damage(0)
+    : _name("defaut ClapTrap name"),health(10), energy(10), damage(0)
 {
     std::cout << "ClapTrap  Default constructor called" << std::endl;
 }

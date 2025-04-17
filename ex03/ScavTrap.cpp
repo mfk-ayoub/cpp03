@@ -6,7 +6,7 @@
 /*   By: ayel-mou <ayel-mou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 15:47:09 by ayel-mou          #+#    #+#             */
-/*   Updated: 2025/04/17 16:29:55 by ayel-mou         ###   ########.fr       */
+/*   Updated: 2025/04/17 17:26:38 by ayel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 ScavTrap::ScavTrap()
 {
 	std::cout << " ScavTrap Default constructor called" << std::endl;
+	_name = "default  ScavTrap name";
 	health = 100;
 	energy = 50;
 	damage = 20;

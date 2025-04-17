@@ -6,7 +6,7 @@
 /*   By: ayel-mou <ayel-mou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/04 15:53:16 by ayel-mou          #+#    #+#             */
-/*   Updated: 2025/04/17 16:29:42 by ayel-mou         ###   ########.fr       */
+/*   Updated: 2025/04/17 17:27:02 by ayel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 FragTrap::FragTrap()
 {
 	std::cout << "FragTrap Default constructor called" << std::endl;
+	_name = "default FragTrap name";
 	health = 100;
 	energy = 30;
 	damage = 30;
