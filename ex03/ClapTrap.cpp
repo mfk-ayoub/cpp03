@@ -6,7 +6,7 @@
 /*   By: ayel-mou <ayel-mou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/30 10:30:24 by ayel-mou          #+#    #+#             */
-/*   Updated: 2025/04/17 17:27:27 by ayel-mou         ###   ########.fr       */
+/*   Updated: 2025/04/18 11:22:36 by ayel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,6 +67,7 @@ void ClapTrap::beRepaired(unsigned int amount)
 
 
 ClapTrap::ClapTrap(const ClapTrap &copy)
+
 {
 	std::cout << "ClapTrap Copy Constructor called" << std::endl;
     _name = copy._name;

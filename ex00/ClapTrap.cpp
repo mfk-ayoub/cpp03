@@ -6,7 +6,7 @@
 /*   By: ayel-mou <ayel-mou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/30 10:30:24 by ayel-mou          #+#    #+#             */
-/*   Updated: 2025/04/04 16:07:16 by ayel-mou         ###   ########.fr       */
+/*   Updated: 2025/04/18 09:42:56 by ayel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,10 @@ void ClapTrap::beRepaired(unsigned int amount)
 ClapTrap::ClapTrap(const ClapTrap &copy)
 {
 	std::cout << "ClapTrap Copy Constructor called" << std::endl;
-	*this = copy;
+	name = copy.name;
+	health = copy.health;
+	energy = copy.energy;
+	damage = copy.damage;
 }
 
 

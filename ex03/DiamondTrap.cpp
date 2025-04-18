@@ -6,7 +6,7 @@
 /*   By: ayel-mou <ayel-mou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 15:31:54 by ayel-mou          #+#    #+#             */
-/*   Updated: 2025/04/17 17:42:04 by ayel-mou         ###   ########.fr       */
+/*   Updated: 2025/04/18 11:23:17 by ayel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ DiamondTrap::DiamondTrap(const DiamondTrap &copy)
 
 void DiamondTrap::whoAmI() const
 {
-		std::cout << "\tDiamondTrap name: " << name << ", ClapTrap name: " << ClapTrap::_name << std::endl;
+		std::cout << "DiamondTrap name: " << name << ", ClapTrap name: " << ClapTrap::_name << std::endl;
 }
 
 DiamondTrap::~DiamondTrap()

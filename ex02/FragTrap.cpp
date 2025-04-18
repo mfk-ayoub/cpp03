@@ -6,7 +6,7 @@
 /*   By: ayel-mou <ayel-mou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/04 15:53:16 by ayel-mou          #+#    #+#             */
-/*   Updated: 2025/04/12 14:33:03 by ayel-mou         ###   ########.fr       */
+/*   Updated: 2025/04/18 11:16:53 by ayel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,11 @@ FragTrap&  FragTrap::operator=(FragTrap const &other)
 
 
 FragTrap::FragTrap(const FragTrap &copy)
+	:ClapTrap(copy)
 {
 	std::cout << "FragTrap Copy Constructor called" << std::endl;
-	*this = copy;
+	name = copy.name;
+	health = copy.health;
+	energy = copy.energy;
+	damage = copy.damage;
 }

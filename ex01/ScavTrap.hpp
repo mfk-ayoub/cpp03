@@ -6,7 +6,7 @@
 /*   By: ayel-mou <ayel-mou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 15:17:22 by ayel-mou          #+#    #+#             */
-/*   Updated: 2025/04/04 18:18:04 by ayel-mou         ###   ########.fr       */
+/*   Updated: 2025/04/18 09:44:42 by ayel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 
 class ScavTrap  : public ClapTrap 
 {
-	private:
 	public:
 		ScavTrap();
 		ScavTrap(const std::string& name);
