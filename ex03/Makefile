@@ -6,7 +6,7 @@
 #    By: ayel-mou <ayel-mou@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/23 07:04:36 by ayel-mou          #+#    #+#              #
-#    Updated: 2025/04/17 15:52:11 by ayel-mou         ###   ########.fr        #
+#    Updated: 2025/04/19 15:44:18 by ayel-mou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME:=DiamondTrap
 BINDIR:=bin/
 
 CC:=c++
-CFLAGS:=-Wall -Wextra -Werror -std=c++98 -Wshadow  -Wno-shadow
+CFLAGS:=-Wall -Wextra -Werror -std=c++98
 DEBUGFLAG:=gdb
 
 OBJ:= $(patsubst %.cpp, $(BINDIR)%.o, $(wildcard *.cpp))

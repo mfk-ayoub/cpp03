@@ -6,7 +6,7 @@
 /*   By: ayel-mou <ayel-mou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/02 20:33:46 by ayel-mou          #+#    #+#             */
-/*   Updated: 2025/04/04 16:49:05 by ayel-mou         ###   ########.fr       */
+/*   Updated: 2025/04/19 15:43:45 by ayel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 
 int main()
 {
-    
     ScavTrap A("Tralalero Tralala"); 
     ScavTrap B("Balerinna Cappucinna");
     ScavTrap C(B);  
